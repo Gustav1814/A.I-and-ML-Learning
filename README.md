@@ -76,8 +76,8 @@ A hands-on, documented journey through **Machine Learning with Scikit-Learn** â€
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/Scikit-Learn-Journey.git
-cd Scikit-Learn-Journey
+git clone https://github.com/Gustav1814/A.I-and-ML-Learning.git
+cd A.I-and-ML-Learning
 
 # 2. Create a virtual environment
 python -m venv .venv
