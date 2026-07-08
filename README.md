@@ -102,11 +102,12 @@ Scikit-Learn-Journey/
 ├── .gitignore                    # Files excluded from version control
 ├── requirements.txt              # Python dependencies
 │
+├── datasets/                     # All datasets in one place
+│   ├── placement_data.csv
+│   └── social_network_ads.csv
+│
 ├── 01-Feature-Scaling/
-│   ├── feature_scaling.ipynb     # Normalization, Standardization, Train-Test Split
-│   └── datasets/
-│       ├── placement_data.csv
-│       └── social_network_ads.csv
+│   └── feature_scaling.ipynb     # Normalization, Standardization, Train-Test Split
 │
 ├── 02-Train-Test-Split/
 │   └── train_test_split.ipynb    # Data splitting, Stratify, Random State
