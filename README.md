@@ -16,13 +16,14 @@ A hands-on, documented journey through **Machine Learning with Scikit-Learn** �
 | # | Topic | Key Concepts | Status |
 |---|-------|-------------|--------|
 | 01 | [Feature Scaling](./01-Feature-Scaling/) | Min-Max Normalization, Standardization (Z-score), Train-Test Split | ✅ Done |
-| 02 | Linear Regression | Simple & Multiple Regression, Cost Function, Gradient Descent | 🔜 Coming Soon |
-| 03 | Logistic Regression | Binary Classification, Sigmoid Function, Decision Boundary | 🔜 Coming Soon |
-| 04 | Decision Trees & Random Forests | Entropy, Information Gain, Ensemble Methods | 🔜 Coming Soon |
-| 05 | Support Vector Machines | Hyperplanes, Kernel Trick, Margin Optimization | 🔜 Coming Soon |
-| 06 | K-Nearest Neighbors | Distance Metrics, Choosing K, Curse of Dimensionality | 🔜 Coming Soon |
-| 07 | Clustering (K-Means) | Centroids, Elbow Method, Silhouette Score | 🔜 Coming Soon |
-| 08 | Dimensionality Reduction (PCA) | Eigenvalues, Variance Explained, Component Selection | 🔜 Coming Soon |
+| 02 | [Train-Test Split](./02-Train-Test-Split/) | Data Splitting, Stratify, Random State, Overfitting Prevention | ✅ Done |
+| 03 | Linear Regression | Simple & Multiple Regression, Cost Function, Gradient Descent | 🔜 Coming Soon |
+| 04 | Logistic Regression | Binary Classification, Sigmoid Function, Decision Boundary | 🔜 Coming Soon |
+| 05 | Decision Trees & Random Forests | Entropy, Information Gain, Ensemble Methods | 🔜 Coming Soon |
+| 06 | Support Vector Machines | Hyperplanes, Kernel Trick, Margin Optimization | 🔜 Coming Soon |
+| 07 | K-Nearest Neighbors | Distance Metrics, Choosing K, Curse of Dimensionality | 🔜 Coming Soon |
+| 08 | Clustering (K-Means) | Centroids, Elbow Method, Silhouette Score | 🔜 Coming Soon |
+| 09 | Dimensionality Reduction (PCA) | Eigenvalues, Variance Explained, Component Selection | 🔜 Coming Soon |
 
 ---
 
@@ -41,6 +42,19 @@ A hands-on, documented journey through **Machine Learning with Scikit-Learn** �
 **Datasets used:**
 - `Placement_Data_Full_Class.csv` — Campus placement prediction (215 records)
 - `Social_Network_Ads.csv` — Purchase prediction based on age & salary (400 records)
+
+### 02 — Train-Test Split
+📓 [Open Notebook](./02-Train-Test-Split/train_test_split.ipynb)
+
+**Concepts covered:**
+- **Why we split data** — preventing overfitting by evaluating on unseen data
+- **Basic 80/20 split** — using `train_test_split` with `test_size` and `random_state`
+- **Stratified splitting** — preserving class proportions with `stratify=y`
+- **Effect of `test_size`** — comparing different split ratios
+- **Reproducibility** — why `random_state` matters for consistent results
+
+**Dataset used:**
+- `Placement_Data_Full_Class.csv` — Campus placement prediction (215 records)
 
 ---
 
@@ -84,15 +98,18 @@ jupyter notebook
 ```
 Scikit-Learn-Journey/
 │
-├── README.md                 # You are here
-├── .gitignore                # Files excluded from version control
-├── requirements.txt          # Python dependencies
+├── README.md                     # You are here
+├── .gitignore                    # Files excluded from version control
+├── requirements.txt              # Python dependencies
 │
 ├── 01-Feature-Scaling/
-│   ├── feature_scaling.ipynb # Notebook: Normalization, Standardization, Train-Test Split
+│   ├── feature_scaling.ipynb     # Normalization, Standardization, Train-Test Split
 │   └── datasets/
 │       ├── placement_data.csv
 │       └── social_network_ads.csv
+│
+├── 02-Train-Test-Split/
+│   └── train_test_split.ipynb    # Data splitting, Stratify, Random State
 │
 └── (more topics coming soon...)
 ```
