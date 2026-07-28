@@ -20,6 +20,10 @@ build/
 *.swp
 *.swo
 
+# Local assistant state
+.agents/
+.claude/
+
 # OS
 .DS_Store
 Thumbs.db
