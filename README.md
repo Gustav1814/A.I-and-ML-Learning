@@ -19,13 +19,14 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 |---|-------|-------------|--------|
 | 01 | [Feature Scaling](./Scikit-Learn/01-Feature-Scaling/) | Min-Max Normalization, Standardization (Z-score) | ✅ Done |
 | 02 | [Train-Test Split](./Scikit-Learn/02-Train-Test-Split/) | Data Splitting, Stratify, Random State, Overfitting Prevention | ✅ Done |
-| 03 | Linear Regression | Simple & Multiple Regression, Cost Function, Gradient Descent | 🔜 Coming Soon |
-| 04 | Logistic Regression | Binary Classification, Sigmoid Function, Decision Boundary | 🔜 Coming Soon |
-| 05 | Decision Trees & Random Forests | Entropy, Information Gain, Ensemble Methods | 🔜 Coming Soon |
-| 06 | Support Vector Machines | Hyperplanes, Kernel Trick, Margin Optimization | 🔜 Coming Soon |
-| 07 | K-Nearest Neighbors | Distance Metrics, Choosing K, Curse of Dimensionality | 🔜 Coming Soon |
-| 08 | Clustering (K-Means) | Centroids, Elbow Method, Silhouette Score | 🔜 Coming Soon |
-| 09 | Dimensionality Reduction (PCA) | Eigenvalues, Variance Explained, Component Selection | 🔜 Coming Soon |
+| 03 | [One Hot Encoder](./Scikit-Learn/04-One%20Hot%20Encoder/) | Categorical encoding, dummy variables, model-ready features | ✅ Done |
+| 04 | [Linear Regression Class](./Scikit-Learn/05%20Linear%20Regression%20Class/) | Regression modeling, prediction, Streamlit deployment | ✅ Done |
+| 05 | Logistic Regression | Binary Classification, Sigmoid Function, Decision Boundary | 🔜 Coming Soon |
+| 06 | Decision Trees & Random Forests | Entropy, Information Gain, Ensemble Methods | 🔜 Coming Soon |
+| 07 | Support Vector Machines | Hyperplanes, Kernel Trick, Margin Optimization | 🔜 Coming Soon |
+| 08 | K-Nearest Neighbors | Distance Metrics, Choosing K, Curse of Dimensionality | 🔜 Coming Soon |
+| 09 | Clustering (K-Means) | Centroids, Elbow Method, Silhouette Score | 🔜 Coming Soon |
+| 10 | Dimensionality Reduction (PCA) | Eigenvalues, Variance Explained, Component Selection | 🔜 Coming Soon |
 
 ### 🧠 Deep Learning *(Coming Soon)*
 
@@ -63,6 +64,31 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 
 **Dataset used:**
 - `Placement_Data_Full_Class.csv` — Campus placement prediction (215 records)
+
+### Scikit-Learn / 03 — One Hot Encoder
+📓 [Open Notebook](./Scikit-Learn/04-One%20Hot%20Encoder/onehotencoder.ipynb)
+
+**Concepts covered:**
+- **Categorical encoding** — handling text labels for machine learning models
+- **One-hot encoding** — converting categorical values into binary indicator columns
+- **Avoiding dummy variable trap** — managing correlated indicator features
+- **Feature engineering** — preparing data for regression and classification
+
+**Dataset used:**
+- `social_network_ads.csv` — Example dataset for preprocessing and model input
+
+### Scikit-Learn / 04 — Linear Regression Class
+📓 [Open Notebook](./Scikit-Learn/05%20Linear%20Regression%20Class/LRC.ipynb)
+
+**Concepts covered:**
+- **Multiple linear regression** — modeling sales from multiple advertising channels
+- **Model persistence** — saving and loading a trained model with `pickle`
+- **Web deployment** — using Streamlit for a lightweight prediction app
+- **Interactive forecasting** — adjusting budgets to compare predicted sales
+
+**Files included:**
+- `linear_model.pkl` — trained regression model
+- `lr_app.py` — Streamlit application for live predictions
 
 ---
 
@@ -113,11 +139,19 @@ A.I-and-ML-Learning/
 ├── Scikit-Learn/                     # 🔬 Machine Learning with Scikit-Learn
 │   ├── datasets/                     # All datasets in one place
 │   │   ├── placement_data.csv
-│   │   └── social_network_ads.csv
+│   │   ├── social_network_ads.csv
+│   │   ├── 6 advertising.csv
+│   │   └── onedata.xlsx
 │   ├── 01-Feature-Scaling/
 │   │   └── feature_scaling.ipynb
-│   └── 02-Train-Test-Split/
-│       └── train_test_split.ipynb
+│   ├── 02-Train-Test-Split/
+│   │   └── train_test_split.ipynb
+│   ├── 04-One Hot Encoder/
+│   │   └── onehotencoder.ipynb
+│   └── 05 Linear Regression Class/
+│       ├── LRC.ipynb
+│       ├── linear_model.pkl
+│       └── lr_app.py
 │
 ├── Deep-Learning/                    # 🧠 Coming Soon
 ├── NLP/                              # 💬 Coming Soon
