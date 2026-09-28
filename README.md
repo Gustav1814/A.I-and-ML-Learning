@@ -21,14 +21,16 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 | 02 | [Train-Test Split](./Scikit-Learn/02-Train-Test-Split/) | Data Splitting, Stratify, Random State, Overfitting Prevention | ✅ Done |
 | 03 | [One Hot Encoder](./Scikit-Learn/04-One%20Hot%20Encoder/) | Categorical encoding, dummy variables, model-ready features | ✅ Done |
 | 04 | [Linear Regression Class](./Scikit-Learn/05%20Linear%20Regression%20Class/) | Regression modeling, prediction, Streamlit deployment | ✅ Done |
-| 05 | Logistic Regression | Binary Classification, Sigmoid Function, Decision Boundary | 🔜 Coming Soon |
+| 05 | [Churn Prediction with Logistic Regression](./Scikit-Learn/06%20%20Churn%20Prediction%20using%20Logistic%20Regression/) | Data preprocessing, binary encoding, missing values, classification | ✅ Done |
 | 06 | Decision Trees & Random Forests | Entropy, Information Gain, Ensemble Methods | 🔜 Coming Soon |
 | 07 | Support Vector Machines | Hyperplanes, Kernel Trick, Margin Optimization | 🔜 Coming Soon |
 | 08 | K-Nearest Neighbors | Distance Metrics, Choosing K, Curse of Dimensionality | 🔜 Coming Soon |
 | 09 | Clustering (K-Means) | Centroids, Elbow Method, Silhouette Score | 🔜 Coming Soon |
 | 10 | Dimensionality Reduction (PCA) | Eigenvalues, Variance Explained, Component Selection | 🔜 Coming Soon |
 
-### 🧠 Deep Learning *(Coming Soon)*
+### 🧠 PyTorch
+
+📓 [Open PyTorch Introduction Notebook](./pytorch/pytorch_intro.ipynb)
 
 ### 💬 Natural Language Processing *(Coming Soon)*
 
@@ -49,8 +51,8 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 - **Best practice:** Fit scaler on training data only, then transform test data (avoiding data leakage)
 
 **Datasets used:**
-- `Placement_Data_Full_Class.csv` — Campus placement prediction (215 records)
-- `Social_Network_Ads.csv` — Purchase prediction based on age & salary (400 records)
+- `placement_data.csv` — Campus placement data
+- `social_network_ads.csv` — Purchase prediction based on age and salary
 
 ### Scikit-Learn / 02 — Train-Test Split
 📓 [Open Notebook](./Scikit-Learn/02-Train-Test-Split/train_test_split.ipynb)
@@ -63,7 +65,7 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 - **Reproducibility** — why `random_state` matters for consistent results
 
 **Dataset used:**
-- `Placement_Data_Full_Class.csv` — Campus placement prediction (215 records)
+- `placement_data.csv` — Campus placement data
 
 ### Scikit-Learn / 03 — One Hot Encoder
 📓 [Open Notebook](./Scikit-Learn/04-One%20Hot%20Encoder/onehotencoder.ipynb)
@@ -75,7 +77,7 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 - **Feature engineering** — preparing data for regression and classification
 
 **Dataset used:**
-- `social_network_ads.csv` — Example dataset for preprocessing and model input
+- `onedata.xlsx` — Example dataset for preprocessing and model input
 
 ### Scikit-Learn / 04 — Linear Regression Class
 📓 [Open Notebook](./Scikit-Learn/05%20Linear%20Regression%20Class/LRC.ipynb)
@@ -89,6 +91,15 @@ A hands-on, documented journey through **Artificial Intelligence & Machine Learn
 **Files included:**
 - `linear_model.pkl` — trained regression model
 - `lr_app.py` — Streamlit application for live predictions
+
+### Scikit-Learn / 05 — Churn Prediction with Logistic Regression
+📓 [Open Notebook](./Scikit-Learn/06%20%20Churn%20Prediction%20using%20Logistic%20Regression/churn.ipynb)
+
+**Concepts covered:**
+- **Data preprocessing** — selecting useful columns and encoding binary values
+- **Missing-value handling** — replacing missing total charges with the column mean
+- **Logistic regression** — training a classifier to predict customer churn
+- **Model persistence** — saving the trained model with `pickle`
 
 ---
 
@@ -141,7 +152,7 @@ A.I-and-ML-Learning/
 │   │   ├── placement_data.csv
 │   │   ├── social_network_ads.csv
 │   │   ├── 6 advertising.csv
-	│   │   ├── 7 churn.csv
+│   │   ├── 7 churn.csv
 │   │   └── onedata.xlsx
 │   ├── 01-Feature-Scaling/
 │   │   └── feature_scaling.ipynb
@@ -149,17 +160,16 @@ A.I-and-ML-Learning/
 │   │   └── train_test_split.ipynb
 │   ├── 04-One Hot Encoder/
 │   │   └── onehotencoder.ipynb
-	│   ├── 05 Linear Regression Class/
-│       ├── LRC.ipynb
-│       ├── linear_model.pkl
-│       └── lr_app.py
-│
-	│   └── 06  Churn Prediction using Logistic Regression/
-	│       ├── churn.ipynb
-	│       └── logistc_model.pkl
+│   ├── 05 Linear Regression Class/
+│   │   ├── LRC.ipynb
+│   │   ├── linear_model.pkl
+│   │   └── lr_app.py
+│   └── 06  Churn Prediction using Logistic Regression/
+│       ├── churn.ipynb
+│       └── logistc_model.pkl
 │
 └── pytorch/                           # PyTorch projects
-	└── .gitkeep
+    └── pytorch_intro.ipynb
 ```
 
 ---
