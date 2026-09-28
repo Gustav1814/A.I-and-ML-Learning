@@ -141,6 +141,7 @@ A.I-and-ML-Learning/
 │   │   ├── placement_data.csv
 │   │   ├── social_network_ads.csv
 │   │   ├── 6 advertising.csv
+	│   │   ├── 7 churn.csv
 │   │   └── onedata.xlsx
 │   ├── 01-Feature-Scaling/
 │   │   └── feature_scaling.ipynb
@@ -148,14 +149,17 @@ A.I-and-ML-Learning/
 │   │   └── train_test_split.ipynb
 │   ├── 04-One Hot Encoder/
 │   │   └── onehotencoder.ipynb
-│   └── 05 Linear Regression Class/
+	│   ├── 05 Linear Regression Class/
 │       ├── LRC.ipynb
 │       ├── linear_model.pkl
 │       └── lr_app.py
 │
-├── Deep-Learning/                    # 🧠 Coming Soon
-├── NLP/                              # 💬 Coming Soon
-└── Computer-Vision/                  # 👁️ Coming Soon
+	│   └── 06  Churn Prediction using Logistic Regression/
+	│       ├── churn.ipynb
+	│       └── logistc_model.pkl
+│
+└── pytorch/                           # PyTorch projects
+	└── .gitkeep
 ```
 
 ---
